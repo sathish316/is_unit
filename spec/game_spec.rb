@@ -21,7 +21,7 @@ describe Game do
       end
 
       describe "with dependencies error" do
-        it "should play by throwing a number on dice" do
+        it "should choose winner" do
           begin
             player_1 = Player.new(Dice.new)
             player_2 = Player.new(Dice.new)
@@ -42,7 +42,7 @@ end
 
 describe Game do
   describe "integration tests" do
-    it "should play by throwing a number on dice" do
+    it "should choose winner" do
       player_1 = Player.new(Dice.new)
       player_2 = Player.new(Dice.new)
       
